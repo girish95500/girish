@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script>
+       function setnewimg()
+       {
+           document.getElementbyId("mic").src="india.png";
+       }
+       function setold(){
+           document.getElementById("mic").src="india.png";
+       }
+   </script>
+</head>
+<body>
+    
+
+    <img id="mic" onmouseover="setnewimg()" onmouseout="setold()" src="lotus.jpg" width="300" height="300">
+
+</body>
+
+</html>

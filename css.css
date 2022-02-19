@@ -1,0 +1,39 @@
+p.dotted{
+    background-color: blue;
+    border-style: dotted;
+    border-width: thick;
+}
+p.dashed{
+    background-color: brown;
+    border-style: dashed;
+}
+p.mix{
+    border-style: ridge;
+    margin: 20px;
+    padding: 20px;
+
+}
+p.solid{
+    border-style: double;
+    border-width: 15px;
+}
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation-duration: 5s;
+    animation: myanimation 7s infinite;
+}
+
+#div1{animation-timing-function: ease;}
+#div2{animation-timing-function: linear;}
+#div3{animation-timing-function: ease-in;}
+#div4{animation-timing-function: ease-out;}
+#div5{animation-timing-function: ease-in-out;}
+@keyframes myanimation {
+    from{left: 0px;}
+    to{right: 500px;}
+}
+

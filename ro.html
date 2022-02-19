@@ -1,0 +1,35 @@
+<html>
+	<head>
+
+	</head>
+<body>
+	<div  align=""center">
+	<h1>girish</h1>
+</div>
+<script>
+	function Student(name, city)
+	{
+		this.Name = name|| "undefined";
+		this.City=city ||  "undefined";
+
+	};
+	Student.prototype.getStudentDetails = function(){
+		return this.Name + "And he belongs to "+this.City;
+	}
+	function player(name,city,grade,team)
+	{
+		Student.call(this, name, city);
+		this.Grade = grade || "undefined";
+		this.Team = team || "undefined";
+	}
+	player.prototype = new Student();
+	player.prototype.constructor=player;
+	var player1 = new player("ahmad","bang","sslc","opal")
+	alert(player1.getStudentDetails());
+	alert(player1 instanceof player);
+	alert(player1 instanceof Student);
+	alert("the");
+</script>
+</body>
+
+	</html>

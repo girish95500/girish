@@ -1,0 +1,11 @@
+body{
+    background-image: url("india.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#ask{
+    color: black;
+    font-size: large;
+    
+}
